@@ -1,0 +1,8 @@
+paths:
+  mystream:
+    source: publisher
+    runOnInit: >
+      ffmpeg -re -stream_loop -1 -i /media/helmet.mp4
+      -an -c:v libx264 -preset veryfast
+      -f rtsp rtsp://localhost:8554/mystream
+    runOnInitRestart: yes
