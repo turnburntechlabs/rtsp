@@ -1,3 +1,4 @@
+protocols: [tcp]
 paths:
   mystream:
     source: publisher
