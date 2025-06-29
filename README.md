@@ -5,3 +5,7 @@ docker run --rm -it -p 8554:8554 -v "C:\Users\nimes\Desktop\tbl\repo\mediamtx.ym
 
 
 
+## INSIDE UBUNTU 
+docker network create face-net
+
+sudo docker run   -it   --network face-net  -p 8554:8554   -v "$(pwd)/mediamtx.yml:/media/mediamtx.yml"   -v "$(pwd):/media"   -w /media   mediamtx-ffmpeg
