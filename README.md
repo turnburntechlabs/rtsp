@@ -4,3 +4,4 @@
 docker run --rm -it -p 8554:8554 -v "C:\Users\nimes\Desktop\tbl\repo\mediamtx.yml:/etc/mediamtx/mediamtx.yml" -v "C:\Users\nimes\Desktop\tbl\repo\VideoAnalytical\rtcv2\moduler:/media"  -w /media mediamtx-ffmpeg
 
 
+
